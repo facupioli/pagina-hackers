@@ -1,0 +1,124 @@
+<html>
+<head>
+</head>
+<body>
+
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+   vector1=new Array(3);
+ 
+ vector2=new Array(3);
+
+ function cargarvector1(vector1)
+ {
+ var f;
+ for(f=0;f<vector1.length;f++)
+ {
+ var v;
+ v=prompt('Ingrese 3 valores aL vector 1:','');
+ vector1[f]=parseInt(v); 
+  }
+ }
+  function cargarvector2(vector2)
+ {
+ var f;
+ for(f=0;f<vector2.length;f++)
+ {
+ var v;
+ v=prompt('Ingrese 3 valores aL vector 2:','');
+ vector2[f]=parseInt(v); 
+  }
+ }
+ function calcularSuma(vector1)
+  {
+ var total=0;
+ var f;
+ for(f=0;f<vector1.length;f++)
+ {
+ total=total+vector1[f];
+ }
+{
+ document.write(' suma de vector1: '+total);
+ }
+}
+
+ function calcularimpar(vector2)
+  {
+ var sumaimpares=0;
+ var y;
+ var r;
+ for(y=0;y<vector2.length;y++){
+ if (vector2[y] %2 === 0){
+   
+  }
+  else
+  {
+  sumaimpares += vector2[y];
+  }
+}
+document.write("<br>")
+ document.write('la suma de los valores Impares del vector 2 es: '+sumaimpares);
+ }
+ 
+ function multiplos1(vector1)
+ {
+  
+  
+  var x;
+  for(x=0;x<vector1.length;x++){
+ if (vector1[x] %5 === 0){
+  mul1=mul1+1
+ 
+    
+  }
+  {
+  document.write("<br>")
+    }
+}
+document.write('la cantidad de multiplos de 5 en el vector1 es: '+mul1);  
+ }
+  function multiplos2(vector2)
+ {
+  
+  
+  var y;
+  for(y=0;y<vector1.length;y++){
+ if (vector1[y] %5 === 0){
+  mul2=mul2+1
+
+ 
+    
+  }
+  {
+  document.write("<br>")
+    }
+}
+document.write('la cantidad de multiplos de 5 en el vectror 2 es: '+mul2);  
+ }
+ function comparar(mul1,mul2){
+  if(mul1<mul2){
+    document.write("<br>")
+    document.write("vector 1 tienes menos multiplos que vector 2");  
+  }
+  else{ document.write("vetor 2 tiene menos multiplos  que vector 1");  }
+ }
+var mul2=0;
+var mul1=0;
+ cargarvector1(vector1);
+ cargarvector2(vector2);
+ calcularSuma(vector1);
+ calcularimpar(vector2);
+ multiplos1(vector1); 
+ multiplos2(vector2);
+ comparar(mul1,mul2);
+ 
+</script>
+</body>
+</html>
+   
+</script>
+</body>
+</html>
